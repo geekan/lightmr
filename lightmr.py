@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 #coding: utf8
 
+def map(func, data):
+    # send request meta-data to all machines
+    # send part of data to all machines
+    # and let them start to process data use a function
+    return 0
+
+def reduce():
+    return 0
+
+# local map-reduce example
 from multiprocessing import Pool
 import time
 
