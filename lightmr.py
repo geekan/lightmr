@@ -6,6 +6,27 @@
 # // 2. Each machine report its resource to the client.
 # 3. Client set the plan and distribute it to all servers.
 
+LIGHTMR_CONTROLLER = 'www.anwcl.com'
+
+
+computing_resource_list = list()
+
+def sync_computing_resource():
+    pass
+
+def join_lightmr_group():
+    #
+    pass
+
+def leave_lightmr_group():
+    pass
+
+
+
+
+
+
+
 # remote map
 def map(func, data):
     # send request meta-data to all machines
