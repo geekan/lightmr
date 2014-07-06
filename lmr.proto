@@ -1,0 +1,17 @@
+package lightmr;
+
+message Controller {
+    required string name = 1;
+    required int id = 2;
+    optional string site = 3;
+}
+
+message Server {
+    required string name = 1;
+    required int id = 2;
+}
+
+message Client {
+    required string name = 1;
+    required int id = 2;
+}
