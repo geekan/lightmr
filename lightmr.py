@@ -13,22 +13,22 @@
 LIGHTMR_CONTROLLER = 'www.anwcl.com'
 
 
+# Controller: store all avaiable computing nodes' ip,
+#   and manage them to run tasks.
 computing_resource_list = list()
 
 def sync_computing_resource():
     pass
 
 def join_lightmr_group():
-    #
     pass
 
 def leave_lightmr_group():
     pass
 
 
-
-
-
+# No controller test.
+ip_list = ["192.168.1.21", "192.168.1.22"]
 
 
 # remote map
@@ -55,7 +55,7 @@ def callback(result):
     #     test_file.write(x)
 
 def main():
-    pool = Pool(processes=1)
+    pool = Pool(processes=3)
     for i in range(10):
         result = pool.apply_async(f, args=(i, ), callback=callback)
     pool.close()
