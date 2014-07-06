@@ -26,6 +26,8 @@ def join_lightmr_group():
 def leave_lightmr_group():
     pass
 
+def update_to_newest_version():
+    pass
 
 # No controller test.
 ip_list = ["192.168.1.21", "192.168.1.22"]
