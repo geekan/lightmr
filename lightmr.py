@@ -6,6 +6,10 @@
 # // 2. Each machine report its resource to the client.
 # 3. Client set the plan and distribute it to all servers.
 
+
+# Role: controller, client, server
+#   Controller may be an optional role, because if we know all the ip,
+#   then it's not so important..
 LIGHTMR_CONTROLLER = 'www.anwcl.com'
 
 
