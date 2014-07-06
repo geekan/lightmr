@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 #coding: utf8
 
+# NOTE: each machine is either client or server.
+# 1. Client broadcast to all machines which have installed lightmr.
+# // 2. Each machine report its resource to the client.
+# 3. Client set the plan and distribute it to all servers.
+
+# remote map
 def map(func, data):
     # send request meta-data to all machines
     # send part of data to all machines
