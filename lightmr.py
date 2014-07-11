@@ -32,14 +32,22 @@ def update_to_newest_version():
 # No controller test.
 ip_list = ["192.168.1.21", "192.168.1.22"]
 
+# Client
+def send_cmd(ip, func, data):
+    pass
 
-# remote map
+# Server
+def response_cmd(ip, func, data):
+    pass
+
+# remote map to all machines in the cluster.
 def map(func, data):
     # send request meta-data to all machines
     # send part of data to all machines
     # and let them start to process data use a function
     return 0
 
+# collect data from the response.
 def reduce():
     return 0
 
