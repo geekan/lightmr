@@ -45,6 +45,10 @@ def map(func, data):
     # send request meta-data to all machines
     # send part of data to all machines
     # and let them start to process data use a function
+
+    for ip in ip_list:
+        send_cmd(ip, func, data)
+
     return 0
 
 # collect data from the response.
