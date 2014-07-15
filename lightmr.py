@@ -34,7 +34,8 @@ ip_list = ["192.168.1.21", "192.168.1.22"]
 
 # Client
 def send_cmd(ip, func, data):
-    pass
+    print('send cmd '+func+' to '+ip)
+    return
 
 # Server
 def response_cmd(ip, func, data):
