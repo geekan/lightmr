@@ -70,7 +70,8 @@ def callback(result):
     #     test_file.write(x)
 
 
-def localProcessPoolTest():
+def process_pool_test():
+    print('process_pool_test')
     pool = Pool(processes=3)
     for i in range(10):
         result = pool.apply_async(f, args=(i, ), callback=callback)
@@ -78,9 +79,13 @@ def localProcessPoolTest():
     pool.join()
     print(result_list)
 
+def map_test():
+    print('map_test')
+    return
 
 def main():
-    localProcessPoolTest()
+    process_pool_test()
+    map_test()
 
 if __name__ == '__main__':
     main()
