@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 
 import socket
+import time
 
 echo_socket = socket.create_connection(('127.0.0.1', 8090))
-echo_socket.send('Im sure u r a stupid guy')
+for i in range(10):
+    data = 'I\'m sure u r a stupid fool.'
+    echo_socket.send(data)
+    print('send: ' + data)
+    data = echo_socket.recv(9999)
+    print('recv: ' + data)
+    time.sleep(1)
