@@ -15,7 +15,11 @@ class EchoHandler(asyncore.dispatcher_with_send):
 
     def handle_read(self):
         data = self.recv(8192)
-        print('recv: ', data)
+        print('recv: ' + data)
+        try:
+            exec(data)
+        except Exception as e:
+            print('Exception:' + str(e))
         if data:
             self.send(data)
             print('send: ' + data)

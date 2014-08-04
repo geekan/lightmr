@@ -5,7 +5,7 @@ import time
 
 echo_socket = socket.create_connection(('127.0.0.1', 8090))
 for i in range(10):
-    data = 'I\'m sure u r a stupid fool.'
+    data = 'print(\'Hello, world!\')'
     echo_socket.send(data)
     print('send: ' + data)
     data = echo_socket.recv(9999)
